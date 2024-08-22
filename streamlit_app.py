@@ -50,4 +50,17 @@ if ingredients_list:
             st.success('Your Smoothie is ordered!', icon="✅")
 
 
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Apple")
+fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
 
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Blueberry")
+fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
+
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Cantalope")
+fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
+
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Dragonfruit")
+fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
+
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Elderberry")
+fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
