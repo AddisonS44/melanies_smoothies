@@ -50,21 +50,21 @@ if ingredients_list:
             st.success('Your Smoothie is ordered!', icon="✅")
 
 
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Apple") #Correct
-fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
+# fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Apple") #Correct
+# fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
 
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Blueberry") #Correct
-fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
+# fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Blueberry") #Correct
+# fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
 
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Cantalope")
-fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
+# fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Cantalope")
+# fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
 
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Dragonfruit") #Correct
-fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
+# fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Dragonfruit") #Correct
+# fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
 
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Elderberry")
-fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
+# fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Elderberry")
+# fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
 
 
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit")
 fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
